@@ -13,11 +13,11 @@ import subprocess
 import webbrowser
 
 def SearchUnityScriptReferenceFor(text):
-    url = 'http://unity3d.com/support/documentation/ScriptReference/30_search.html?q=' + text.replace(' ','%20')
+    url = 'http://docs.unity3d.com/Documentation/ScriptReference/30_search.html?q=' + text.replace(' ','%20')
     webbrowser.open_new_tab(url)
 
 def OpenUnityFunctionReference(text):
-    url = 'http://unity3d.com/support/documentation/ScriptReference/' + text.replace(' ','%20')
+    url = 'http://docs.unity3d.com/Documentation/ScriptReference/' + text.replace(' ','%20')
     webbrowser.open_new_tab(url)
 
 class UnityReferenceOpenSelectionCommand(sublime_plugin.TextCommand):
